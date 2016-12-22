@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广帮助5</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_generalize.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/help.html#Help_10";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--手机推广帮助-->
+		<section class="section2">
+			<p>手机推广帮助</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>违规作弊</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<p class="need">为什么软件的使用和留存情况差也会被判断为违规推广？</p>
+							<p class="need light">软件的推广质量整体较差被判断为违规推广的原因如下： 首先，合作软件是按活跃用户付费的，活跃用户肯定是有正常 使用的。 其次，推广质量的考察并不是针对单个客户，而是针 对某个会员一段时间推广的所有用户。 合作软件关于这个规则 的考察其实一直是有的，该规则只是对违规推广的补充，对合 规推广的会员不影响：只要采用合规推广的方式，整体的渠道 质量肯定不会太差，如果使用手机模拟工具或者手动刷激活， 厂商是不允许的，一经发现厂商将冻结封号处理。
+							</p>
+
+							<p class="need">如何结算？</p>
+							<p class="need light">普通用户满100元、每月1日系统自动开始结算，无需申请、方 便及时。 随着软件推广量的增加您的用户等级会逐步提高，对 应的产品推广单价会提高、结算周期也会变短。
+							</p>
+
+							<p class="light">
+								举个例子：
+							</p>
+							<p class="light">
+								某软件线下渠道的平均周留存是45%，月留存是30%
+							</p>
+							<p class="light">
+								而会员小张的周留存只有3%，月留存是1%。
+							</p>
+							<p class="need light">
+								那么小张这样的会员我们是不欢迎的。
+
+							</p>
+
+							<p class="light">
+								原因：
+							</p>
+							<p class="light">
+								1、会拉低整体渠道的质量，导致合作方终止合作或降低价格
+							</p>
+							<p class="need light">
+								2、小张很可能是违规推广的，比如手动刷激活、手机模拟工 具刷激活等。
+							</p>
+							<p class="light">
+								这么做的目的是为了提高渠道质量，才能接入更多更好的软件 以及提高产品接入单价，让更多合规推广的会员赚到更多钱。
+							</p>
+
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

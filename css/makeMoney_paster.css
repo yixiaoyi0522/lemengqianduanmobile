@@ -1,0 +1,116 @@
+@charset "utf-8";
+body {
+  background: #f6f6f6;
+}
+section {
+  text-align: center;
+}
+section h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+section p {
+  font-size: 0.6rem;
+}
+.section2 {
+  padding: 1.5rem 0.5rem;
+}
+.section2 h2 {
+  margin-bottom: 0.5rem;
+}
+.section2 .s2_box {
+  width: 13.5rem;
+  margin: 1rem auto 0;
+}
+.section2 .s2_box .img {
+  float: left;
+}
+.section2 .s2_box .img img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.section2 .s2_box .text {
+  float: left;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+.section2 .s2_box .text p {
+  font-size: 0.65rem;
+}
+.section3 {
+  padding: 1.5rem 0.5rem;
+  background: #fff;
+}
+.section3 > p {
+  margin-top: 0.5rem;
+}
+.section3 .money {
+  width: 6.5rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  color: #fff;
+  font-size: 0.6rem;
+  background: #2E71F7;
+  text-align: center;
+  margin: 1.25rem auto 0;
+}
+.section3 .s3_box {
+  text-align: left;
+  margin: 1.5rem 0.56rem 0;
+}
+.section3 .s3_box .ld_box {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.section3 .s3_box .ld_box img {
+  width: 3rem;
+  height: 3rem;
+}
+.section3 .s3_box .ld_box .text {
+  margin-bottom: 0.6rem;
+}
+.section3 .s3_box .ld_box .text h5 {
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.section3 .s3_box .ld_box .text p {
+  font-size: 0.6rem;
+}
+.section4 {
+  padding: 1.5rem 0.5rem;
+}
+.section4 h2 {
+  margin-bottom: 0.5rem;
+}
+.section5 {
+  padding: 1.5rem 0.5rem;
+  background: #fff;
+}
+.section5 h3 {
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+.section6 {
+  padding: 1.5rem 0.5rem;
+}
+.section6 h2 {
+  margin-bottom: 0.5rem;
+}
+.section6 .join {
+  padding: 1.2rem 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.section6 .join a {
+  display: block;
+  width: 5.5rem;
+  height: 1.65rem;
+  background: #2E71F7;
+  line-height: 1.65rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.7rem;
+  margin: 0 auto;
+}

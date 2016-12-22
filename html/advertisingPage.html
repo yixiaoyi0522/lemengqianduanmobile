@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>宣传单页</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/advertisingPage.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://hehuo.lemeng.net/index.php?s=/Index/singlePage.html";
+			} else {
+
+			}
+		</script>-->
+
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urlpartnertop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/advertisingPage_banner.png" />
+		</section>
+		<!--宣传单页-->
+		<section class="section2">
+			<img src="../img/advertisingPage_xuanchuandanye.png" />
+			<div class="s2_box">
+				<form action="/">
+					<ul>
+						<li>
+							<label for="name">请输入姓名</label>
+							<input type="text" name="username" value="" id="name">
+						</li>
+						<li>
+							<label for="phone">请输入电话</label>
+							<input type="text" name="phone" value="" id="phone">
+						</li>
+						<li>
+							<label for="phone">请输入邮箱</label>
+							<input type="text" name="email" value="" id="email">
+						</li>
+						<li>
+							<label for="qq">请输入QQ</label>
+							<input type="text" name="qq" value="" id="qq">
+						</li>
+						<li>
+							<label for="address">请输入地址</label>
+							<input type="text" name="address" value="" id="address">
+						</li>
+
+					</ul>
+				</form>
+				<div class="preview">
+					<a onclick="javascript:document.getElementById('danye').scrollIntoView()" href="#danye">预览单页</a>
+				</div>
+			</div>
+		</section>
+		<!--单页效果图-->
+		<section class="section3">
+			<img src="../img/advertisingPage_danyexiaoguo.png" />
+			<div id="danye" class="s3_box">
+				<div class="img">
+					<div class="line"></div>
+					<p>正面</p>
+					<img src="../img/advertisingPage_sanzheye1.png" />
+				</div>
+				<div class="img">
+					<div class="line"></div>
+					<p>反面</p>
+					<img src="../img/advertisingPage_sanzheye2.png" />
+				</div>
+				<div class="download">
+					<a href="#">下载单页</a>
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

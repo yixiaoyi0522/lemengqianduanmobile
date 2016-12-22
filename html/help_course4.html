@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广教程3</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_course.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/romjiaocheng";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--乐盟推广教程-->
+		<section class="section2">
+			<p>乐盟推广教程</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>ROM推广教程</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<ol>
+								<li>
+									<p class="need light">在乐盟产品中心下载统计组件LmService.apk和需要的 推广APP安装包。
+									</p>
+									<img class="need" src="../img/rom1.png" />
+								</li>
+								<li>
+									<p class="need light">先将下载统计组件LmService.apk内置于ROM的 system/app目录下 ，否则无法计费。</p>
+									<img class="need" src="../img/rom2.png" />
+								</li>
+								<li>
+									<p class="need light">再将下载的推广APP放在 data/app或者system/app 目录下。（注:data/app目录下APP用户可自行卸载， system/app目录下用户无法卸载。）
+									</p>
+									<img class="need" src="../img/rom3.png" />
+								</li>
+								<li>
+									<p class="need light">内置推广APP完成。不同的APP有不同的激活规则，详情请看介绍页。
+									</p>
+								</li>
+
+							</ol>
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

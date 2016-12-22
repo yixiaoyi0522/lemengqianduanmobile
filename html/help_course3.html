@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广教程3</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_course.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/pcjiaocheng";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--乐盟推广教程-->
+		<section class="section2">
+			<p>乐盟推广教程</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>PC助手教程</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<ol>
+								<li>
+									<p class="need light">下载乐盟pc助手并安装，建议安装到默认位置，直接点击下一步即可。</p>
+									<img class="need" src="../img/pc1.png" />
+								</li>
+								<li>
+									<p class="need light">打开位于桌面的乐盟pc助手快捷方式 。（桌面上找不 到的话也可以去文件夹位置C:\Program Files (x86)\乐 盟PC助手，执行pchelper.exe程序。）
+									</p>
+									<img class="need" src="../img/pc2.png" />
+								</li>
+								<li>
+									<p class="need light">在登录页面输入平台所提供的账号和密码登录。</p>
+									<img class="need" src="../img/pc3.png" />
+								</li>
+								<li>
+									<p class="need light">进入到软件界面后点击加号图标 添加套餐，选择完毕后点击保存。
+									</p>
+									<img src="../img/pc4.png" />
+								</li>
+								<li>
+									<p class="need light">套餐选择设置完毕后勾选上右上方“选中后自动安装 “选项，然后用usb数据线连接手机和电脑，此时手机界 面可能申请调试权限，点击允许，开始安装。（注意： 安装执行的为当前选择套餐，支持多部手机同时安装）
+									</p>
+								</li>
+								<li>
+									<p class="need light">安装完成。（注意：安装时为黄色，安装完成后变为绿 色，在手机上也可以查看软件安装进度。）
+									</p>
+									<img src="../img/pc5.png" />
+								</li>
+
+							</ol>
+							<p class="need light">注意：此时手机可能会提示启用applist组件获取使用量 信息，自动选择允许。可忽略
+							</p>
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

@@ -1,0 +1,121 @@
+@charset "utf-8";
+body {
+  background: #f6f6f6;
+}
+section {
+  text-align: center;
+}
+section h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+section p {
+  font-size: 0.6rem;
+}
+.section2 {
+  padding: 1.5rem 1rem 0;
+  position: relative;
+}
+.section2 img {
+  width: 4rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0.7rem;
+}
+.section2 .s2_box {
+  padding: 3.5rem 0 1rem 1.2rem;
+  background: #fff;
+  min-height: 5rem;
+}
+.section2 .s2_box ul {
+  padding-left: 0;
+}
+.section2 .s2_box ul li {
+  margin-top: 0.5rem;
+}
+.section2 .s2_box ul li label {
+  width: 3.5rem;
+  font-size: 0.6rem;
+  line-height: 1.375rem;
+  float: left;
+  padding-top: 0.25rem;
+}
+.section2 .s2_box ul li input {
+  width: 9rem;
+  height: 1.375rem;
+  margin-left: 0.5rem;
+  border: 0.025rem solid #d2d2d2;
+  outline: none;
+}
+.section2 .s2_box .preview {
+  text-align: center;
+  margin: 0 auto;
+}
+.section2 .s2_box .preview a {
+  display: block;
+  width: 6rem;
+  height: 1.5rem;
+  background: #ffb700;
+  line-height: 1.65rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}
+.section3 {
+  padding: 1.5rem 1rem 0;
+  position: relative;
+}
+.section3 > img {
+  width: 4rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 0.7rem;
+}
+.section3 .s3_box {
+  padding: 1.5rem 0 1rem 1.2rem;
+  background: #fff;
+  min-height: 5rem;
+}
+.section3 .s3_box .img {
+  padding-top: 2rem;
+}
+.section3 .s3_box .img p {
+  width: 2.5rem;
+  color: #45619d;
+  font-size: 0.6rem;
+  margin: 1rem auto;
+  padding: 0 0.5rem;
+  background: #fff;
+}
+.section3 .s3_box .img .line {
+  background: #45619D;
+  width: 90%;
+  height: 0.05rem;
+  margin: 0 auto;
+  margin-bottom: -1.5rem;
+}
+.section3 .s3_box .img img {
+  max-width: 90%;
+  margin-top: 0.5rem;
+}
+.section3 .s3_box .download {
+  text-align: center;
+  margin: 1rem auto;
+}
+.section3 .s3_box .download a {
+  display: block;
+  width: 6rem;
+  height: 1.5rem;
+  background: #ffb700;
+  line-height: 1.65rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+}

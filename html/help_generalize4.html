@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广帮助4</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_generalize.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/help.html#Help_9";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--手机推广帮助-->
+		<section class="section2">
+			<p>手机推广帮助</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>数据结算</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<p class="need">联盟的推广数据何时返回？</p>
+							<p class="need light">激活数据次日下午6点返回。</p>
+
+							<p class="need">如何结算？</p>
+							<p class="need light">普通用户满100元、每月1日系统自动开始结算，无需申请、方 便及时。 随着软件推广量的增加您的用户等级会逐步提高，对 应的产品推广单价会提高、结算周期也会变短。
+							</p>
+
+							<p class="need">联盟佣金收取税费吗？</p>
+							<p class="need light">
+								VIP2级以上会收取5.5%的发票税费，普通用户和VIP1没有任何手续费用。
+							</p>
+
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

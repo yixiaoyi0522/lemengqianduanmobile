@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>制作名片</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/makeCard.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://hehuo.lemeng.net/index.php?s=/Index/makeCard.html";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urlpartnertop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/makecard_banner.png" />
+		</section>
+		<!--制作名片-->
+		<section class="section2">
+			<img src="../img/makecard_make.png" />
+			<div class="s2_box">
+				<form action="/">
+					<ul>
+						<li>
+							<label for="name">请输入姓名</label>
+							<input type="text" name="username" value="" id="name">
+						</li>
+						<li>
+							<label for="phone">请输入电话</label>
+							<input type="text" name="phone" value="" id="phone">
+						</li>
+						<li>
+							<label for="phone">请输入邮箱</label>
+							<input type="text" name="email" value="" id="email">
+						</li>
+						<li>
+							<label for="qq">请输入QQ</label>
+							<input type="text" name="qq" value="" id="qq">
+						</li>
+						<li>
+							<label for="address">请输入地址</label>
+							<input type="text" name="address" value="" id="address">
+						</li>
+						
+					</ul>
+				</form>
+				<div class="choose_box">
+					<div class="card activecard">
+						<div class="line"></div>
+						<p><span>01</span></p>
+						<div class="card_img">
+							<img src="../img/card1.png"/>
+							<img class="imgtwo" src="../img/card1contrary.png"/>
+						</div>
+					</div>
+					<div class="card">
+						<div class="line"></div>
+						<p><span>02</span></p>
+						<div class="card_img">
+							<img src="../img/card2.png"/>
+							<img class="imgtwo" src="../img/card2contrary.png"/>
+						</div>
+					</div>
+					<div class="card">
+						<div class="line"></div>
+						<p><span>03</span></p>
+						<div class="card_img">
+							<img src="../img/card3.png"/>
+							<img class="imgtwo" src="../img/card3contrary.png"/>
+						</div>
+					</div>
+					<div class="card">
+						<div class="line"></div>
+						<p><span>04</span></p>
+						<div class="card_img">
+							<img src="../img/card4.png"/>
+							<img class="imgtwo" src="../img/card4contrary.png"/>
+						</div>
+					</div>
+				</div>
+				<div class="preview">
+					<a onclick="javascript:document.getElementById('card').scrollIntoView()" href="#danye">预览名片</a>
+				</div>
+			</div>
+		</section>
+		<!--名片模板选择-->
+		<section class="section3">
+			<img src="../img/makecard_choose .png" />
+			<div id="card" class="s3_box">
+				<div class="img">
+					<img class="d_active" src="../img/downcard1.png"/>
+					<img src="../img/downloadcard2.jpg"/>
+					<img src="../img/downloadcard3.jpg"/>
+					<img src="../img/downloadcard4.jpg"/>
+				</div>
+				<div class="download">
+					<a href="#">下载正面</a>
+				</div>
+				<div class="img">
+					<img class="d_active" src="../img/downloadcard1contrary.png"/>
+					<img src="../img/downloadcard2contrary.jpg"/>
+					<img src="../img/downloadcard3contrary.jpg"/>
+					<img src="../img/downloadcard4contrary.jpg"/>
+				</div>
+				<div class="download">
+					<a href="#">下载反面</a>
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+	<script type="text/javascript">
+		
+		//名片点击
+		$('.choose_box .card').click(function(){
+			$(this).siblings('.card').removeClass('activecard').end().addClass('activecard');
+		})
+		
+		//预览名片
+		$('.preview').click(function(){
+			
+			var n = $('.activecard').index();
+			var d_img = $('#card .img img')
+//			console.log(n);
+//debugger;
+//console.log(d_img)
+			d_img.siblings('img').hide();
+			d_img.eq(n).show();
+			d_img.eq(n+4).show();
+			
+		})
+		
+	</script>
+
+</html>

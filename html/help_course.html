@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广教程</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_course.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/jiaocheng";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--乐盟推广教程-->
+		<section class="section2">
+			<p>乐盟推广教程</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>盒子教程</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<ol>
+								<li>
+									<p class="need light">首先将盒子的取出，将电源线与网线连接上盒子的相应 接口，网线必须能联网。</p>
+									<img class="need" src="../img/box1.jpg" />
+								</li>
+								<li>
+									<p class="need light">待指示灯亮灯后将需要装app的手机用数据线连接到盒 子上（USB数据线请自备），最多可支持4台手机同时 安装。此时手机应处于未锁屏状态，并注意手机屏幕若 弹出请求调试许可，选择允许调试。
+									</p>
+									<img class="need" src="../img/box2.jpg" />
+									<img class="need" src="../img/box3.jpg" />
+								</li>
+								<li>
+									<p class="need light">开始安装，请注意手机屏幕上的安装进度，安装过程中 显示为黄色，安装完成后为绿色且有安装完成提示，本 过程为全自动安装，安装过程中请勿操作手机，以免导 致app安装失败。
+									</p>
+									<img class="need" src="../img/box4.jpg" />
+								</li>
+								<li>
+									<p class="need light">安装完成，待安装界面显示完成后方可拔下手机或数据线。
+									</p>
+									<img src="../img/box5.jpg" />
+								</li>
+
+							</ol>
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

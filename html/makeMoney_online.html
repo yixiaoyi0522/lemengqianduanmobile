@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>如何赚钱-线上渠道</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/makeMoney_online.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/zhanzhang";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/mm_ol_banner.png" />
+		</section>
+
+		<!--乐盟手机联盟功能亮点-->
+		<section class="section2">
+			<h2>乐盟旗下名站联盟功能亮点</h2>
+			<p>纯移动互联网联盟，专注与移动流量变现和移动APP产品推广</p>
+			<div class="s2_box">
+				<div class="ld_box">
+					<img src="../img/mmolld1.png" alt="/" />
+					<div class="text">
+						<h5>海量丰富产品</h5>
+						<p>浏览器、安全、视频</p>
+						<p>新闻、社交、电商等正规</p>
+						<p>产品全网罗</p>
+					</div>
+				</div>
+				<div class="ld_box">
+					<img src="../img/mmolld2.png" alt="/" />
+					<div class="text">
+						<h5>独家支持游戏</h5>
+						<p>皇室战争、大话西游</p>
+						<p>梦幻西游、问道等火爆高分</p>
+						<p>成手机游戏独家支持</p>
+					</div>
+				</div>
+				<div class="ld_box">
+					<img src="../img/mmolld3.png" alt="/" />
+					<div class="text">
+						<h5>稳定结算收益</h5>
+						<p>六年来风雨无阻的</p>
+						<p>结算，是乐盟系统强大而</p>
+						<p>稳定的证明</p>
+					</div>
+				</div>
+				<div class="ld_box">
+					<img src="../img/mmolld4.png" alt="/" />
+					<div class="text">
+						<h5>智能佣金统计</h5>
+						<p>应用、游戏、网址导航</p>
+						<p>购物分成佣金数据清晰明确</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		
+		<!--名站联盟-->
+		<section class="section3">
+			<img style="max-width: 100%;" src="../img/mm_ol_mz.png" alt="" />
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

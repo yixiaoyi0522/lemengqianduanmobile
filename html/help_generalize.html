@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广帮助</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_generalize.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/help.html#Help_6";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--手机推广帮助-->
+		<section class="section2">
+			<p>手机推广帮助</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>新手上路</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<p class="need">我是新手，怎么推广赚钱？</p>
+
+							<p class="need light">加入乐盟很简单，注册账号之后，登陆后台点击“获取产品” 详细了解产品的激活标准和单价，然后选择合适的软件点击 “获取产品”按钮即可下载到电脑上。 接下来选择合适的推广 方式向尽可能多的手机中安装这些软件，在手机用户使用软件 触发激活标准之后，您就可以收到相应的佣金了。
+							</p>
+
+							<p class="need">具体如何推广软件呢？</p>
+
+							<p class=" light">联盟的推广产品现在有三种推广方式，如下：</p>
+							<p class="light">一、通过乐盟装机助手安装推广：（此种推广方式适合手机门 店、维修、卖场类会员） 首先安装联盟的装机助手，然后 通过装机助手把推广软件全自动批量安装到手机上。
+							</p>
+							<p class="need light">
+								<a href="/">点此查看乐盟装机助手使用教程。</a>
+							</p>
+
+							<p class="light">二、ROM作者内置推广：（此种推广方式适合ROM作者）将从 您后台下载的乐盟统计组件和推广的软件内置到您的ROM 作品中即可。
+							</p>
+							<p class="need light">
+								<a href="/">点此查看ROM内置教程。</a>
+							</p>
+
+							<p class="need light">三、乐盟手机助手安装推广：（适合任何会员，只要手机能上 网就能推广！）所有联盟会员均有自己专属的在线推广页 只要手机能上网，即可通过访问在线推广页下载安装推广 软件，是目前最灵活便捷的推广方式！在您的后台即可查 看您专属的推广页链接。
+							</p>
+
+							<p class="need">产品如何激活？</p>
+
+							<p class="need light">每个产品有不同的激活标准，详情请参看后台“获取产品”页 面中每个产品名称下的详细说明。举例：联网激活，意为联网 状态下打开并使用软件就算触发激活。
+							</p>
+
+							<p class="need">产品是否可以在WIFI环境下激活？</p>
+
+							<p class="need light">大部分产品手机用户在WIFI下可以激活。</p>
+
+							<p class="need">手机重复安装是否多次返回数据？</p>
+
+							<p class="need light">不会多次统计。 基本的准则是，如果一部手机之前装过某款软 件，那么这款软件再安装是不算激活量的。 一旦一台机器装过 一次软件，厂商就会收到该部手机的硬件设备码，以后再安装 只要设备码相同，无论刷机或修改系统都不能计入激活。
+							</p>
+
+							<p class="need">产品的文件名是否可以更改？</p>
+
+							<p class="need light">可以更改，不影响产品的激活统计。。</p>
+
+							<p class="need light">乐盟的推广软件可靠吗？</p>
+
+							<p class="need">乐盟合作的都是知名软件的官方版：</p>
+							<p class="light">1、绝无扣费插件；</p>
+							<p class="light">2、绝无恶意广告；</p>
+							<p class="light">3、绝无山寨软件；</p>
+							<p class="need light">4、任一软件无需收费，推广软件不用交任何费用。</p>
+
+							<p class="need">联盟的推广软件是否支持iOS系统的推广？</p>
+
+							<p class="need light">目前乐盟仅支持安卓软件和电脑软件，近期即将支持iOS系统 推广，敬请期待！
+							</p>
+
+							<p class="need">推广软件升级是否会影响积分？</p>
+
+							<p class="need light">推广软件自动更新不影响会员获得积分；但请不要通过第三方 软件（比如豌豆荚）进行升级，软件本身升级即可。
+							</p>
+
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

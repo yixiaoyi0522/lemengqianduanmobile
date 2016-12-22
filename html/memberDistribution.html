@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>会员分布</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/memberDistribution.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/map.html";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--高级渠道代理-->
+		<section class="section1">
+
+			<p class="title">高级渠道代理</p>
+			<div><img class="flag" src="../img/memberdistributionflag.png" /></div>
+			<p class="text">已经有<span>153798</span>个商家加入，快来
+				<a href="/">注册</a>吧！</p>
+			<img style="width: 90%;" src="../img/memberdistribution.png" />
+			<div class="flag_jion1">
+				<img src="../img/member_flag1.png" />
+				<p>全国已经有153798个商家加入</p>
+			</div>
+			<div class="flag_jion2">
+				<img src="../img/member_flag2.png" />
+				<p>还在等什么？赶快加入吧！</p>
+			</div>
+
+		</section>
+
+		<!--华北地区-->
+		<section class="sec_blue">
+			<h2>华北地区</h2>
+			<div class="position_box">
+				<table>
+					<tr>
+						<td>
+							<dl id="北京">
+								<dt>
+                        			<h3>北京市</h3>
+                        			<strong>2924</strong>
+                        			<p>(部分会员)</p>
+                            	</dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<!--<li>北京通****手机广场</li>-->
+										<li>北京**泽手机广场</li>
+										<li>北京****生手机店</li>
+										<li>北京福**手机店</li>
+										<!--<li>北京满****手机连锁</li>-->
+										<li>北京海**手机大卖场</li>
+										<!--<li>北京亚**手机大卖场</li>-->
+										<li>北京西**手机广场</li>
+										<!--<li>北京天******手机广场</li>-->
+										<li>北京**雪手机店</li>
+										<!--<li>北京****来手机连锁</li>-->
+										<!--<li>北京合****手机大卖场</li>-->
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="天津">
+								<dt>
+		                            <h3>天津市</h3>
+		                            <strong>817</strong>
+		                            <p>(部分会员)</p>
+		                        </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>天津港**手机广场</li>
+										<!--<li>天津****德手机大卖场</li>-->
+										<li>天津顶**手机店</li>
+										<!--<li>天津**诚手机大卖场总店</li>-->
+										<li>天津港**手机广场</li>
+										<li>天津丰**手机卖场</li>
+										<!--<li>天津**悦手机大卖场</li>-->
+										<!--<li>天津轩**科技智能手机店</li>-->
+										<!--<li>天津**霞通讯手机连锁</li>-->
+										<!--<li>天津金****达手机卖场</li>-->
+										<li>天津金**手机大卖场</li>
+										<li>天津祥**手机大卖场</li>
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="河北">
+								<dt>
+		                            <h3>河北省</h3>
+		                            <strong>1369</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<!--<li>保定金****手机卖场</li>-->
+										<li>保定韦**手机卖场</li>
+										<li>承德博**手机卖场</li>
+										<!--<li>石家庄乐**通讯手机城</li>-->
+										<li>张家口恒**电讯广场</li>
+										<!--<li>石家庄燃****数码广场</li>-->
+										<!--<li>廊坊中国电信爱****手机卖场</li>-->
+										<!--<li>沧州北**手机大卖场</li>-->
+										<li>沧州天**手机店</li>
+										<li>石家庄唱**手机广场</li>
+										<li>唐山晓**手机卖场</li>
+										<!--<li>衡水希**通信广场</li>-->
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="山西">
+								<dt>
+		                            <h3>山西省</h3>
+		                            <strong>835</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>太原**高数码广场</li>
+										<li>太原鑫**手机广场</li>
+										<li>大同亿**手机广场</li>
+										<li>阳泉**业通讯广场</li>
+										<li>阳泉旭**手机卖场</li>
+										<li>朔州立**手机店</li>
+										<!--<li>临汾**盛手机广场</li>
+										<li>长治亿**通讯广场</li>
+										<li>晋城**宇手机卖场</li>
+										<li>晋城恒**手机商城</li>
+										<li>长治**盛通讯广场</li>
+										<li>朔州新****手机城</li>-->
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="内蒙古">
+								<dt>
+		                            <h3>内蒙古</h3>
+		                            <strong>224</strong>
+		                            <p>(部分会员)</p>
+                        		</dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<!--<li>呼和浩特**讯手机专卖</li>
+										<li>呼和浩特乐**通讯</li>
+										<li>呼和浩特**桥手机卖场</li>
+										<li>包头**平手机卖场</li>
+										<li>包头百**手机店</li>
+										<li>赤峰**英手机大卖场</li>-->
+										<li>通辽睿**手机店</li>
+										<li>包头联**手机卖场</li>
+										<li>乌海聚**通讯</li>
+										<li>通辽同**手机店</li>
+										<li>赤峰常**手机卖场</li>
+										<li>包头**语手机卖场</li>
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+		</section>
+
+		<!--华东地区-->
+		<section class="sec_white">
+			<h2>华东地区</h2>
+			<div class="position_box">
+				<table>
+					<tr>
+						<td>
+							<dl id="山东">
+								<dt>
+		                            <h3>山东省</h3>
+		                            <strong>1568</strong>
+		                            <p>(部分会员)</p>
+                            	</dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<!--<li>烟台**通通信手机连锁</li>-->
+										<!--<li>淄博中****手机大卖场</li>-->
+										<!--<li>日照北**手机大卖场</li>-->
+										<!--<li>烟台诺****手机卖场</li>-->
+										<li>济南百**手机大卖场</li>
+										<li>日照海**数码广场</li>
+										<li>济南诚**手机大卖场</li>
+										<li>青岛飞****数码广场</li>
+										<!--<li>济宁天**电讯手机卖场</li>-->
+										<li>济宁天**手机连锁</li>
+										<li>滨州**联手机大卖场</li>
+										<!--<li>青岛帝**手机数码广场</li>-->
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="江苏">
+								<dt>
+		                            <h3>江苏省</h3>
+		                            <strong>857</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>南京苏**手机卖场</li>
+										<li>江阴鑫**手机卖场</li>
+										<li>江阴广**手机卖场</li>
+										<li>无锡魔**手机店</li>
+										<!--<li>宜兴恒**手机大卖场</li>
+										<li>泰州金**手机连锁</li>
+										<li>连云港长**手机大卖场</li>
+										<li>盐城八****手机大卖场</li>
+										<li>无锡**麟手机连锁</li>
+										<li>淮安步****手机卖场</li>-->
+										<li>淮安**越手机店</li>
+										<li>南京金****手机广场</li>
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="上海">
+								<dt>
+		                            <h3>上海市</h3>
+		                            <strong>822</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>上海闽**手机店</li>
+										<li>上海**梅手机店</li>
+										<li>上海鸣**手机连锁</li>
+										<li>上海永**手机卖场</li>
+										<li>上海**泉手机卖场</li>
+										<li>上海**好手机广场</li>
+										<!--<li>上海领**手机连锁</li>
+										<li>上海心**手机连锁</li>
+										<li>上海**林手机店</li>
+										<li>上海**信手机连锁</li>
+										<li>上海驰**手机连锁</li>
+										<li>上海**云手机店</li>-->
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="安徽">
+								<dt>
+		                            <h3>安徽省</h3>
+		                            <strong>806</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>合肥名**手机店</li>
+										<li>芜湖**宇手机卖场</li>
+										<li>芜湖信**手机连锁</li>
+										<li>合肥天**手机卖场</li>
+										<!--<li>蚌埠天**手机大卖场</li>
+										<li>马鞍山**乐手机大卖场</li>
+										<li>安庆**城广场手机大卖场</li>
+										<li>铜陵科**手机卖场</li>-->
+										<!--<li>铜陵**基手机大卖场</li>
+										<li>阜阳远**手机大卖场</li>-->
+										<li>安庆高**手机大卖场</li>
+										<li>蚌埠**凯手机大卖场</li>
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="浙江">
+								<dt>
+		                            <h3>浙江省</h3>
+		                            <strong>1170</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>杭州**百精品手机</li>
+										<li>杭州宝**手机连锁</li>
+										<li>宁波百**手机店</li>
+										<!--<li>温州**乐天翼卖场</li>
+										<li>嘉兴天**手机连锁</li>
+										<li>台州****流手机店</li>
+										<li>宁波爱**手机店</li>
+										<li>绍兴**胜手机大卖场</li>-->
+										<li>温州万**手机连锁</li>
+										<li>舟山文**手机卖场</li>
+										<!--<li>嘉兴**兴手机连锁店</li>-->
+										<li>温州给**手机店</li>
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<dl id="福建">
+								<dt>
+		                            <h3>福建省</h3>
+		                            <strong>1232</strong>
+		                            <p>(部分会员)</p>
+	                            </dt>
+								<dd>
+									<ul class="ulPicTxtC">
+										<li>厦门爱**数码</li>
+										<li>福州**晖数码城</li>
+										<li>福州鸿**电讯</li>
+										<!--<li>莆田**民超市手机卖场</li>
+										<li>莆田奔**手机大卖场</li>
+										<li>漳州环**手机店</li>
+										<li>泉州聚**通讯广场</li>
+										<li>三明冠**手机大卖场</li>
+										<li>三明**博智能手机卖场</li>-->
+										<li>南平光**手机大卖场</li>
+										<li>宁德**德手机卖场</li>
+										<li>漳州恒**数码科技广场</li>
+									</ul>
+								</dd>
+							</dl>
+						</td>
+					</tr>
+				</table>
+
+			</div>
+		</section>
+
+		<!--华中地区-->
+		<section class="sec_blue">
+			<h2>华中地区</h2>
+			<div class="position_box">
+				<table>
+						<tr>
+							<td>
+								<dl id="湖南">
+									<dt>
+                            			<h3>湖南省</h3>
+                            			<strong>442</strong>
+		                            	<p>(部分会员)</p>
+									</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>长沙**场通讯</li>
+											<li>长沙尚**手机连锁</li>
+											<li>长沙**吉通讯连锁</li>
+											<!--<li>株洲新****通信手机店</li>
+											<li>常德**杰手机卖场</li>
+											<li>邵阳****纬手机连锁旗舰店</li>
+											<li>衡阳****路天翼手机卖场</li>
+											<li>岳阳精**手机卖场</li>-->
+											<li>怀化华**连锁</li>
+											<!--<li>张家界**定区天翼手机卖场</li>-->
+											<li>娄底铭**电讯连锁</li>
+											<li>岳阳凯**手机卖场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="湖北">
+									<dt>
+                            			<h3>湖北省</h3>
+                            			<strong>618</strong>
+		                            	<p>(部分会员)</p>
+									</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>武汉兴**通信广场</li>
+											<li>黄石**得手机店</li>
+											<!--<li>荆州江**移动手机广场</li>
+											<li>武汉叶**手机广场</li>
+											<li>宜昌**美通讯广场</li>
+											<li>十堰**安平价手机超市</li>
+											<li>襄阳**阳通讯手机专营店</li>
+											<li>孝感阳**通信城广场店</li>-->
+											<li>鄂州**鸿通讯广场</li>
+											<li>黄石中**通讯广场</li>
+											<li>黄冈**桥手机大卖场</li>
+											<li>武汉**虫数码手机店</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="河南">
+									<dt>
+                            			<h3>河南省</h3>
+                            			<strong>1476</strong>
+		                            	<p>(部分会员)</p>
+									</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>郑州思**手机广场</li>
+											<li>开封**先手机店</li>
+											<li>开封星**手机广场</li>
+											<li>洛阳昊**手机卖场</li>
+											<li>平顶山文**手机连锁</li>
+											<li>焦作盛****手机</li>
+											<!--<li>焦作超****手机连锁</li>
+											<li>洛阳凡**手机大卖场</li>
+											<li>周口亚**手机大卖场</li>
+											<li>信阳宏**通讯手机卖场</li>
+											<li>平顶山乐**手机连锁</li>
+											<li>安阳水**手机广场</li>-->
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="江西">
+									<dt>
+                            			<h3>江西省</h3>
+                            			<strong>401</strong>
+		                            	<p>(部分会员)</p>
+									</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>南昌卡**通讯</li>
+											<li>南昌**华手机店</li>
+											<li>南昌顺**手机卖场</li>
+											<!--<li>九江联**移动手机广场</li>
+											<li>上饶水****手机卖场</li>
+											<li>抚州中****讯手机广场</li>-->
+											<li>吉安踏**手机广场</li>
+											<!--<li>新余****湖手机卖场</li>-->
+											<li>宜春**品手机商城</li>
+											<!--<li>宜春西**平价手机广场</li>
+											<li>上饶宏**手机数码广场</li>-->
+											<li>九江阳**手机广场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</section>
+
+		<!--华南地区-->
+		<section class="sec_white">
+			<h2>华南地区</h2>
+			<div class="position_box">
+				<table>
+						<tr>
+							<td>
+								<dl id="广东">
+									<dt>
+                            			<h3>广东省</h3>
+                            			<strong>352</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>广州幻****手机店</li>
+											<li>广州誉**通信连锁</li>
+											<li>广州永**手机连锁</li>
+											<li>韶关和**手机连锁</li>
+											<li>深圳新****手机店</li>
+											<li>深圳大**通讯连锁</li>
+											<!--<li>佛山榴**天翼手机卖场</li>
+											<li>佛山平**天翼手机卖场</li>
+											<li>汕尾城****天翼手机卖场</li>
+											<li>东莞世**通讯城</li>
+											<li>东莞丰**手机连锁</li>
+											<li>韶关正**手机数码连锁</li>-->
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="广西">
+									<dt>
+                            			<h3>广西省</h3>
+                            			<strong>386</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<!--<li>桂林海****手机卖场</li>
+											<li>南宁众**手机连锁</li>
+											<li>柳州胜****智能手机广场</li>-->
+											<li>梧州**越手机店</li>
+											<li>桂林明**手机广场</li>
+											<li>桂林**星手机卖场</li>
+											<li>玉林桂**手机连锁</li>
+											<!--<li>北海鸣**通讯手机卖场</li>
+											<li>柳州新****天翼手机卖场</li>
+											<li>南宁**明通讯广场</li>-->
+											<li>玉林星**通讯</li>
+											<li>南宁**佳手机连锁</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="海南">
+									<dt>
+                            			<h3>海南省</h3>
+                            			<strong>177</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>海口**杰专营店</li>
+											<!--<li>海口鑫**玥手机卖场</li>-->
+											<li>海口金**手机卖场</li>
+											<li>三亚忧**手机店</li>
+											<li>三亚永**手机店</li>
+											<!--<li>三亚强**数码手机销售</li>
+											<li>三沙**翔通讯手机连锁</li>
+											<li>海口骏**手机大卖场</li>
+											<li>海口**星手机大卖场</li>
+											<li>海口金**手机店</li>-->
+											<li>三亚**途通信手机店</li>
+											<li>三亚金**智能手机卖场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</section>
+
+		<!--东北地区-->
+		<section class="sec_blue">
+			<h2>东北地区</h2>
+			<div class="position_box">
+				<table>
+						<tr>
+							<td>
+								<dl id="黑龙江">
+									<dt>
+                            			<h3>黑龙江</h3>
+                            			<strong>661</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>哈尔滨**盛手机广场</li>
+											<li>哈尔滨宇**手机卖场</li>
+											<li>大庆**志手机连锁</li>
+											<li>牡丹江青**手机卖场</li>
+											<!--<li>伊春恒**通讯手机卖场</li>
+											<li>鸡西**晟手机大卖场</li>
+											<li>牡丹江**成手机卖场</li>
+											<li>大庆腾**手机数码广场</li>
+											<li>齐齐哈尔鑫****手机店</li>
+											<li>齐齐哈尔**田手机卖场</li>-->
+											<li>鸡西炬**手机卖场</li>
+											<li>哈尔滨福****手机店</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="吉林">
+									<dt>
+                            			<h3>吉林省</h3>
+                            			<strong>559</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>长春诚**手机店</li>
+											<li>长春**达手机卖场</li>
+											<li>长春红**手机卖场</li>
+											<li>通化**凯手机广场</li>
+											<li>辽源红**手机商店</li>
+											<li>吉林南****手机店</li>
+											<!--<li>吉林**达手机卖场</li>
+											<li>四平万**手机大卖场</li>
+											<li>通化凯**手机卖场</li>
+											<li>长春锋**手机卖场</li>
+											<li>吉林瑞**手机大卖场</li>
+											<li>四平****代手机店</li>-->
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="辽宁">
+									<dt>
+                            			<h3>辽宁省</h3>
+                            			<strong>498</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<!--<li>大连鑫**手机卖场</li>
+											<li>大连**涛手机广场</li>
+											<li>沈阳诚**手机通讯城</li>
+											<li>沈阳**代手机广场</li>
+											<li>鞍山宏**手机卖场</li>
+											<li>盘锦天**手机店</li>-->
+											<li>盘锦双**手机卖场</li>
+											<li>铁岭**源手机大卖场</li>
+											<li>锦州泰**手机卖场</li>
+											<li>丹东**彦手机店</li>
+											<li>辽阳**亮手机店</li>
+											<li>辽阳旺**手机店</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</section>
+
+		<!--西北地区-->
+		<section class="sec_white">
+			<h2>西北地区</h2>
+			<div class="position_box">
+				<table>
+						<tr>
+							<td>
+								<dl id="宁夏">
+									<dt>
+                            			<h3>宁夏省</h3>
+                            			<strong>93</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<!--<li>银川新****货通信广场</li>
+											<li>银川国****机电器广场</li>
+											<li>银川南****讯手机连锁</li>-->
+											<li>银川**达手机店</li>
+											<li>银川紫**手机连锁</li>
+											<!--<li>银川百****手机广场</li>-->
+											<li>银川**达手机店</li>
+											<li>银川**祥手机店</li>
+											<!--<li>吴忠天****信手机广场</li>
+											<li>吴忠红**手机广场</li>-->
+											<li>固原**泽手机卖场</li>
+											<li>固原华**手机广场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<!--<tr>
+							<td>
+								<dl id="新疆">
+									<dt>
+                            			<h3>新疆省</h3>
+                            			<strong>78</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>乌鲁木齐众****业通讯广场</li>
+											<li>乌鲁木齐**信手机卖场</li>
+											<li>乌鲁木齐中**通讯广场</li>
+											<li>乌鲁木齐**宇手机卖场</li>
+											<li>乌鲁木齐钢**信息广场</li>
+											<li>乌鲁木齐伟**手机卖场</li>
+											<li>乌鲁木齐**泉手机卖场</li>
+											<li>乌鲁木齐宏**手机卖场</li>
+											<li>乌鲁木齐佳**手机大卖场</li>
+											<li>乌鲁木齐**光手机卖场</li>
+											<li>克拉玛依博**手机卖场</li>
+											<li>克拉玛依**天手机卖场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>-->
+						<tr>
+							<td>
+								<dl id="青海">
+									<dt>
+                            			<h3>青海省</h3>
+                            			<strong>191</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>西宁同****手机广场</li>
+											<li>西宁赛**手机广场</li>
+											<li>西宁**联手机广场</li>
+											<li>西宁义**手机广场</li>
+											<li>西宁东**手机连锁</li>
+											<li>西宁青**手机广场</li>
+											<!--<li>西宁交****动手机广场</li>
+											<li>西宁光****场手机超市</li>
+											<li>西宁**通手机大卖场</li>
+											<li>西宁豪****码手机批发广场</li>
+											<li>西宁**牌手机连锁</li>
+											<li>西宁海****手机广场</li>-->
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="陕西">
+									<dt>
+                            			<h3>陕西省</h3>
+                            			<strong>862</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>长安华**手机卖场</li>
+											<li>长安畅**手机卖场</li>
+											<li>西安强**手机卖场</li>
+											<li>宝鸡**烨电讯广场</li>
+											<!--<li>咸阳**海移动通信广场</li>
+											<li>咸阳鸿**手机卖场</li>
+											<li>延安**飞智能手机卖场</li>
+											<li>宝鸡****乐手机卖场</li>
+											<li>榆林友**手机卖场</li>
+											<li>榆林**阳手机卖场</li>-->
+											<li>延安圣**通信广场</li>
+											<li>西安八**通讯广场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="甘肃">
+									<dt>
+                            			<h3>甘肃省</h3>
+                            			<strong>515</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<!--<li>兰州悦**通讯阳光店</li>-->
+											<li>兰州民**手机卖场</li>
+											<!--<li>兰州****华家电城手机城</li>
+											<li>兰州西**手机卖场</li>
+											<li>兰州**太通讯数码广场</li>-->
+											<li>兰州飞**手机</li>
+											<!--<li>兰州临**路手机大卖场</li>
+											<li>金昌红**通讯手机广场</li>-->
+											<li>酒泉百**手机广场</li>
+											<li>酒泉**信通讯广场</li>
+											<li>天水大**电子广场</li>
+											<li>天水**园手机大卖场</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</section>
+
+		<!--西南地区-->
+		<section class="sec_blue">
+			<h2>西南地区</h2>
+			<div class="position_box">
+				<table>
+						<tr>
+							<td>
+								<dl id="四川">
+									<dt>
+                            			<h3>四川省</h3>
+                            			<strong>1305</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<!--<li>南充**民通讯手机店</li>
+											<li>绵阳七**数码广场</li>-->
+											<li>绵阳**德数码广场</li>
+											<li>成都动**手机店</li>
+											<li>成都**子手机店</li>
+											<li>乐山鸿**连锁营业厅</li>
+											<li>南充志**通讯连锁店</li>
+											<li>南充创**手机店</li>
+											<!--<li>宜宾**友通讯移动手机连锁</li>
+											<li>成都讯**通讯广场店</li>
+											<li>眉山环****手机连锁店</li>
+											<li>自贡美****贡井连锁店</li>-->
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="云南">
+									<dt>
+                            			<h3>云南省</h3>
+                            			<strong>620</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>昆明****星通讯广场</li>
+											<li>昆明捷**手机卖场</li>
+											<li>昆明春**手机店</li>
+											<!--<li>昆明小**地手机卖场</li>
+											<li>昆明宇**通讯连锁</li>
+											<li>玉溪小**街天翼手机卖场</li>
+											<li>玉溪聆**手机专营店</li>
+											<li>丽江伟**通讯</li>
+											<li>普洱乐**新世纪手机卖场</li>-->
+											<li>普洱**彩手机工厂店</li>
+											<li>昆明博**手机店</li>
+											<li>昆明互**连锁护国店</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="贵州">
+									<dt>
+                            			<h3>贵州省</h3>
+                            			<strong>531</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<li>贵阳百**手机连锁</li>
+											<li>贵阳**博通讯</li>
+											<li>贵阳**达手机卖场</li>
+											<li>遵义宏**达手机卖场</li>
+											<li>铜仁新**手机大卖场</li>
+											<!--<li>铜仁北**手机广场旗舰店</li>
+											<li>六盘水金**通讯手机卖场</li>
+											<li>遵义来**电子手机广场</li>
+											<li>贵阳口**无限手机店</li>
+											<li>六盘水诚**手机店</li>
+											<li>贵阳**龙手机连锁店</li>-->
+											<li>遵义万**手机店</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<dl id="重庆">
+									<dt>
+                            			<h3>重庆市</h3>
+                            			<strong>945</strong>
+		                            	<p>(部分会员)</p>
+                            		</dt>
+									<dd>
+										<ul class="ulPicTxtC">
+											<!--<li>重庆龙**手机连锁园区店</li>-->
+											<li>重庆赛**移动</li>
+											<li>重庆**华手机店</li>
+											<!--<li>重庆卓**数码广场</li>
+											<li>重庆商******形手机店</li>
+											<li>重庆**博手机馆</li>
+											<li>重庆****桥天翼手机卖场</li>
+											<li>重庆****子天翼手机卖场</li>-->
+											<li>重庆国**手机店</li>
+											<li>重庆**有通信</li>
+											<li>重庆三****手机通讯</li>
+											<li>重庆七**手机连锁机构</li>
+										</ul>
+									</dd>
+								</dl>
+							</td>
+						</tr>
+				</table>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

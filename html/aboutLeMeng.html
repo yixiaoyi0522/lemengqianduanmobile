@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关于乐盟</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/aboutLeMeng.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/lemeng.html";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/aboutlm_banner.png" />
+		</section>
+
+		<!--公司简介-->
+		<section class="section2">
+			<h2>公司介绍</h2>
+			<p>Company Profile</p>
+			<div class="line"></div>
+			<p class="fir">风暴，中国第一智能手机预装平台，成立于2011年3月</p>
+			<p class="sec">乐盟整合了智能手机、PC领域最优质的应用以及游戏资源搭建了广告主和门店预装之间的服务平台。并借助海量用户的平台优势以及贴近渠道推广者的服务模式，为门店会员提供产品推广服务和收益，以及为致力于在智能手机、PC平台推广产 品、品牌的广告主提供高效的服务。乐盟提供了公平、合理、 高效的资源配置平台，为门店会员和广告主创造价值最大化。
+			</p>
+			<p class="sec">乐盟拥有以业内资深专家及知名高级工程师为核心的研发队伍，对平台系统拥有独特的技术优势。团队在互联网行业有多年的积累，拥有丰富的广告资源，乐盟希望给行业带来独特的价值。移动互联网将因乐盟而更精彩！
+			</p>
+		</section>
+
+		<!--荣誉奖项-->
+		<section class="section3">
+			<h2>荣誉奖项</h2>
+			<p>Academic Honors</p>
+			<div class="s3_box">
+				<div class="jx_box">
+					<div class="num">
+						<p></p>
+					</div>
+					<div class="text">
+						<h5>2014年</h5>
+						<p>2014百度联盟峰会-聚力·和合共盛奖</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="jx_box">
+					<div class="num">
+						<p></p>
+					</div>
+					<div class="text">
+						<h5>2013年</h5>
+						<p>2013金山网络优秀合作伙伴</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="jx_box">
+					<div class="num">
+						<p></p>
+					</div>
+					<div class="text">
+						<h5>2012年</h5>
+						<p>2012中国手机游戏渠道榜TOP50</p>
+						<p>山东互联网大会 年度最佳移动广告平台奖</p>
+						<p>《福布斯》2012年移动互联网100强</p>
+						<p>中国移动互联网产业应用与数字娱乐大会-最佳移动营销案例奖</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="jx_box">
+					<div class="num">
+						<p></p>
+					</div>
+					<div class="text">
+						<h5>2011年</h5>
+						<p>中国广告与品牌大会 2011中国新媒体贡献大奖</p>
+						<p>中国年度创业邦 创新成长企业100强</p>
+						<p>黑马大赛第二季总决赛"黑马大赛100强"</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+
+		<!--加入我们-->
+		<section class="section4">
+			<h2>加入我们</h2>
+			<p>Join Us</p>
+			<div class="s4_box">
+				<h3>PHP研发工程师</h3>
+				<ol>
+					<li>精通PHP，开发过中型以上的项目；</li>
+					<li>熟悉数据结构、DB、OS、Web开发等相关知识，对Linux相关的各类技术情有独钟；
+					</li>
+					<li>有大规模、高性能互联网网站系统相关的设计和开发经验者优先；</li>
+					<li>具备良好的学习能力和成长潜力，渴望和团队一起快速成长</li>
+				</ol>
+				<h3>高级渠道经理</h3>
+				<ol>
+					<li>熟悉互联网商业模式,认同移动互联网, 对互联广告有一定了解；</li>
+					<li>2年及以上广告行业渠道销售经验，或者服务广告代理公司；有一定的广告客户资源优先，topsales优先；
+					</li>
+					<li>独立跟进，服务客户的能力；良好的沟通，协调能力；专业的销售能力；
+					</li>
+					<li>新意识强，思考能力强；短时间适应后，具备带初级员工的能力。</li>
+				</ol>
+			</div>
+		</section>
+
+		<!--联系我们-->
+		<section class="section5">
+			<h2>联系我们</h2>
+			<p>Contact Us</p>
+			<div class="line"></div>
+			<p class="fir">您好！感谢您来到乐盟网络！请您为我们留言或使用以下方式联系我们我们将竭诚为您服务！
+			</p>
+			<p>联系电话：400-9977-768</p>
+			<p>客服 Q Q：8000033559 </p>
+			<p>咨询邮箱：service@lemeng.net</p>
+			<p>公司地址：山东省烟台市芝罘区电子商务创新港706室</p>
+
+		</section>
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

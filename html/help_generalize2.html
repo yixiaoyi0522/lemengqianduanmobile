@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="lmApp">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>帮助中心-推广帮助2</title>
+		<link rel="icon" href="../img/logo.png" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<link rel="stylesheet" href="../css/help_generalize.css" />
+		<script src="../js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/userem.js"></script>
+		<script src="../js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../controller/lmController.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net/help.html#Help_7";
+			} else {
+
+			}
+		</script>-->
+	</head>
+
+	<body ontouchstart ng-controller="lmCtrl">
+
+		<!--引入头部-->
+		<div ng-include="urltop"></div>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="../img/helpsummarize_banner.png" />
+		</section>
+		<!--手机推广帮助-->
+		<section class="section2">
+			<p>手机推广帮助</p>
+			<div class="s2_box">
+				<ul>
+					<li>
+						<div class="question">
+							<i><img src="../img/Question.png"/></i>
+							<h5>账号相关</h5>
+						</div>
+						<div class="answer">
+							<i><img src="../img/Answer.png"/></i>
+							<p class="need">注册时应该注意那些问题？</p>
+							<ol>
+								<li class="light">电话、QQ和Email，请务必填写正确，这是我们与您联系 的主要途径；</li>
+								<li class="light">付款信息请正确完整的填写，以便我们及时给您付款；</li>
+								<li class="light need">付款信息不能自行修改，是为了防止账号被盗导致佣金的 损失。修改付款信息请联系企业客服QQ800033559，提供相关资料即可。</li>
+							</ol>
+
+							<p class="need">登录密码忘记了怎么找回？</p>
+
+							<p class="need light">可以通过注册邮箱找回密码，如果注册邮箱接收不到邮件，请 联系企业客服QQ800033559。
+							</p>
+
+							<p class="need">手机收不到验证码怎么办？</p>
+
+							<p class="need light">有的手机接收验证码的时间会长些，请耐心等待一下，如果还 是没有接收到，请联系企业客服QQ800033559。
+							</p>
+
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<!--footer-->
+		<div ng-include="urlfooter"></div>
+
+	</body>
+
+</html>

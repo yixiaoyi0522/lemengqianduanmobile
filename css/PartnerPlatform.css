@@ -1,0 +1,175 @@
+@charset "utf-8";
+body {
+  background: #f6f6f6;
+}
+section {
+  text-align: center;
+}
+section h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+section p {
+  font-size: 0.6rem;
+}
+.line {
+  height: 0.075rem;
+  background: #43a4ff;
+}
+.section2 {
+  padding-bottom: 1.25rem;
+}
+.section2 h2 {
+  padding-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.section2 .s2_box {
+  text-align: center;
+  margin: 1.5rem 0.56rem 0.5rem;
+}
+.section2 .s2_box ul {
+  margin: 0;
+  padding: 0;
+}
+.section2 .s2_box ul img {
+  width: 12.424rem;
+  height: 6.075rem;
+}
+.section3 {
+  background: #fff;
+  padding: 1.5rem 0.5rem;
+}
+.section3 h3 {
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+.section3 .s3_box {
+  text-align: left;
+  margin-top: 1.25rem;
+}
+.section3 .s3_box .num {
+  float: left;
+  color: #666;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+.section3 .s3_box .num p img {
+  width: 2rem;
+  height: 2rem;
+}
+.section3 .s3_box .text {
+  float: left;
+  width: 14rem;
+}
+.section3 .s3_box .text h5 {
+  font-size: 0.6rem;
+}
+.section3 .s3_box .text p {
+  font-size: 0.55rem;
+}
+.section4 {
+  padding: 1.5rem 0.5rem;
+}
+.section4 h3 {
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.section4 > p {
+  font-size: 0.6rem;
+  font-family: CN_extra;
+  margin-bottom: 0.25rem;
+}
+.section4 .s4_box {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.section4 .s4_box .hb_box {
+  margin-top: 2rem;
+}
+.section4 .s4_box .hb_box .num {
+  float: left;
+  color: #666;
+  font-weight: bold;
+  margin-right: 0.7rem;
+}
+.section4 .s4_box .hb_box .num p img {
+  width: 2.525rem;
+  height: 3.075rem;
+}
+.section4 .s4_box .hb_box .text {
+  float: left;
+  width: 13.4rem;
+}
+.section4 .s4_box .hb_box .text h5 {
+  font-size: 0.6rem;
+}
+.section4 .s4_box .hb_box .text p {
+  font-size: 0.55rem;
+}
+.section5 {
+  background: #fff;
+  padding: 1.5rem 0.5rem;
+}
+.section5 .s5_box {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.section5 .s5_box .sy_box {
+  margin-top: 2rem;
+}
+.section5 .s5_box .sy_box .img {
+  float: left;
+  color: #666;
+  font-weight: bold;
+  margin-right: 0.7rem;
+}
+.section5 .s5_box .sy_box .img img {
+  width: 4.5rem;
+  height: 3rem;
+}
+.section5 .s5_box .sy_box .text {
+  float: left;
+  width: 11.65rem;
+}
+.section5 .s5_box .sy_box .text h5 {
+  font-size: 0.6rem;
+}
+.section5 .s5_box .sy_box .text p {
+  font-size: 0.55rem;
+}
+.section5 .s5_box .sy_box2 {
+  margin-top: 2rem;
+}
+.section5 .s5_box .sy_box2 .img {
+  float: left;
+  color: #666;
+  font-weight: bold;
+}
+.section5 .s5_box .sy_box2 .img img {
+  width: 4.5rem;
+  height: 3rem;
+}
+.section5 .s5_box .sy_box2 .text {
+  float: left;
+  width: 11.65rem;
+  margin-right: 0.7rem;
+}
+.section5 .s5_box .sy_box2 .text h5 {
+  text-align: right;
+  font-size: 0.6rem;
+}
+.section5 .s5_box .sy_box2 .text p {
+  text-align: right;
+  font-size: 0.55rem;
+}
+.section6 {
+  padding: 1.5rem 0.5rem;
+}
+.section6 h2 {
+  margin: 1rem 0;
+}
+.section6 img {
+  width: 14.725rem;
+  height: 12rem;
+}

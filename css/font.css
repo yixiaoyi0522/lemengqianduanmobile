@@ -1,0 +1,14 @@
+@charset "utf-8";
+@font-face {
+	font-family: CN_extra;
+	src: url('../font/SourceHanSans-ExtraLight.otf');
+}
+@font-face {
+	font-family: CN_light;
+	src: url('../font/SourceHanSans-Light.otf');
+}
+
+@font-face {
+	font-family: CN_normal;
+	src: url('../font/SourceHanSans-Normal.otf');
+}
