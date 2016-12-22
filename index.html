@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+		<title>首页</title>
+		<link rel="icon" href="img/logo.png" />
+		<!--<link rel="stylesheet" type="text/css" href="css/font.css" />-->
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/userem.js"></script>
+		
+		<!--电脑打开跳到电脑端页面-->
+		<!--<script type="text/javascript">
+			//平台、设备和操作系统
+
+			var system = {
+
+				win: false,
+
+				mac: false,
+
+				xll: false
+
+			};
+
+			//检测平台
+
+			var p = navigator.platform;
+
+			system.win = p.indexOf("Win") == 0;
+
+			system.mac = p.indexOf("Mac") == 0;
+
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if(system.win || system.mac || system.xll) {
+				window.location.href = "http://www.lemeng.net";
+			} else {
+
+			}
+		</script>-->
+
+	</head>
+
+	<body ontouchstart>
+
+		<header>
+			<div class="top">
+				<img src="img/logo.png" alt="logo" />
+				<p>乐盟网络</p>
+				<span id="Nav">
+					<i class="iconfont show"><img src="img/Nav_menu.png"/></i>
+					<i style="display: none;" class="iconfont close"><img src="img/Nav_close.png"/></i>
+					<i class="iconfont home" style="display: none;"><img src="img/Nav_menu.png"/></i>
+				</span>
+
+				<div class="clearfix"></div>
+			</div>
+			<div id="total" class="content" style="display: none;">
+				<div class="nav">
+					<div class="login login1">登录</div>
+					<div class="login">注册</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="choose">
+					<a class="one active" href="index.html">首页</a>
+					<i class="iconfont">></i>
+				</div>
+				<div id="money" class="choose money">
+					<a class="one" href="javascript:;">如何赚钱</a>
+					<i class="iconfont">></i>
+					<div class="money_content" style="display: none;">
+						<div>
+							<div class="money_box">
+								<a href="html/makeMoney_store.html">门店/运营商</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="money_box">
+								<a href="html/makeMoney_wholesale.html">批发/经销商</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div>
+							<div class="money_box">
+								<a href="html/makeMoney_ROM.html">ROM作者</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="money_box">
+								<a href="html/makeMoney_paster.html">贴膜/充值商</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div>
+							<div class="money_box">
+								<a href="html/makeMoney_online.html">线上渠道</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="money_box">
+								<a href="html/PartnerPlatform.html">创业/推广者</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+				</div>
+				<div id="news" class="choose news">
+					<a class="one" href="javascript:;">乐盟新闻</a>
+					<i class="iconfont">></i>
+					<div class="news_content" style="display: none;">
+						<div>
+							<div class="news_box">
+								<a href="html/lemengNews.html">乐盟新闻</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="news_box">
+								<a href="html/lemengNotice.html">乐盟公告</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="choose">
+					<a class="one" href="html/memberDistribution.html">会员分布</a>
+					<i class="iconfont">></i>
+				</div>
+				<div id="help" class="choose">
+					<a class="one" href="javascript:;">帮助中心</a>
+					<i class="iconfont">></i>
+					<div class="help_content" style="display: none;">
+						<div class="help_box">
+							<a class="two" href="html/help_summarize.html">乐盟概述</a>
+							<i class="iconfont">></i>
+						</div>
+						<div class="help_box">
+							<a class="two" href="javascript:;">手机推广帮助</a>
+							<i class="iconfont">></i>
+							<div class="help_sub" style="display: none;">
+								<div>
+									<div class="help_sub_box">
+										<a href="html/help_generalize.html">新手上路</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="help_sub_box">
+										<a href="html/help_generalize2.html">账号相关</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div>
+									<div class="help_sub_box">
+										<a href="html/help_generalize3.html">推广系统</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="help_sub_box">
+										<a href="html/help_generalize4.html">数据结算</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div>
+									<div class="help_sub_box">
+										<a href="html/help_generalize5.html">违规作弊</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+						</div>
+						<div class="help_box">
+							<a class="two" href="javascript:;">乐盟推广教程</a>
+							<i class="iconfont">></i>
+							<div class="help_sub" style="display: none;">
+								<div>
+									<div class="help_sub_box">
+										<a href="html/help_course.html">盒子教程</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="help_sub_box">
+										<a href="html/help_course2.html">web端教程</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div>
+									<div class="help_sub_box">
+										<a href="html/help_course3.html">PC助手教程</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="help_sub_box">
+										<a href="html/help_course4.html">ROM教程</a>
+										<i class="iconfont">></i>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="choose">
+					<a class="one" href="html/aboutLeMeng.html">关于乐盟</a>
+					<i class="iconfont">></i>
+
+				</div>
+			</div>
+
+			<div id="h_login" class="h_login" style="display: none;">
+				<div class="loginImg_box">
+					<img src="img/login_code.png" />
+				</div>
+				<div class="text">长按二维码关注我们，查看后台详细数据</div>
+			</div>
+
+		</header>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="max-width: 100%;" src="img/index_baner.png" alt="baner" />
+		</section>
+		<!--乐盟手机联盟-->
+		<section class="section2">
+			<h2>乐盟手机联盟</h2>
+			<h3>助您在移动互联网大潮中掘金</h3>
+			<div class="s2_iconbox">
+				<div class="box active">
+					<img class="noactive" src="img/lianmeng_1.png" alt="" />
+					<img class="img_active" src="img/lianmeng_active1.png" alt="" />
+					<p>ROM作者</p>
+					<div class="sanjiao"></div>
+					<div class="sub">
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>产品丰富稳定可靠</h5>
+						<p>
+							海量正版官方软件，100%保证绝任何扣费等影响用户体验的行为，稳定可靠收益高。
+						</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>独家游戏下载器产品</h5>
+						<p>
+							独家支持使用下载器的形式内置当前最火爆、分成最高的手机游戏产品。
+						</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>统计组件精致小巧</h5>
+						<p>
+							只有数百K，不占用ROM体积、不影响手机流量、内置更方便统计更精准。
+						</p>
+					</div>
+				</div>
+				<div class="box">
+					<img class="noactive" src="img/lianmeng_2.png" alt="" />
+					<img class="img_active" src="img/lianmeng_active2.png" alt="" />
+					<p>门店预装</p>
+					<div class="sanjiao"></div>
+					<div class="sub">
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>产品丰富稳定可靠</h5>
+						<p>海量官方正版软件100%无扣费，支持当前最火爆的手机游戏高分成，将您的客流量最大程度变现。</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>安装方便快捷全自动</h5>
+						<p> 使用乐盟提供的电脑端装机助手即可全自动无人值守安装软件，方便快捷。</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>无门槛全免费加盟</h5>
+						<p>无需加盟费即可加入乐盟推广，安装量大的用户可使用独家研发的装机盒子效率更高。</p>
+					</div>
+				</div>
+				<div class="box">
+					<img class="noactive" src="img/lianmeng_3.png" alt="" />
+					<img class="img_active" src="img/lianmeng_active3.png" alt="" />
+					<p>站长渠道</p>
+					<div class="sanjiao"></div>
+					<div class="sub">
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>站长专属联盟</h5>
+						<p>名站联盟（www.mingzhan.com）是公司旗下为站长渠道设立的变现联盟平台。</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5 style="margin-top: 1rem;">产品好收益高</h5>
+						<p>独家高转化高收益的产品，将您的移动流量高效变现。</p>
+					</div>
+				</div>
+				<div class="box">
+					<img class="noactive" src="img/lianmeng_4.png" alt="" />
+					<img class="img_active" src="img/lianmeng_active4.png" alt="" />
+					<p>渠道推广者</p>
+					<div class="sanjiao"></div>
+					<div class="sub">
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>方便的推广模式</h5>
+						<p>如果您善于推广、宣传或有某方面的独家资源，可方便的加入乐盟推广系统获取收益。</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>独家四级代理系统</h5>
+						<p>乐盟支持最多四级下线代理，最多可获得30%的佣金奖励！</p>
+						<i class="iconfont" style="color: blue;font-style: normal">|</i>
+						<h5>流程简单快捷</h5>
+						<p>注册获取专属推广链接，引导潜在会员通过链接进行注册并推广，即可完成推广过程。</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+		</section>
+
+		<!-- 海量正版官方APP-->
+		<section class="section3">
+			<h2>海量正版官方APP</h2>
+			<div id="APP">
+				<div id="sofeware" class="btn active">手机软件</div>
+				<div id="game" class="btn">手机游戏</div>
+			</div>
+			<div class="box softwareBox">
+				<div class="img_box">
+					<img src="img/baidu.jpg" alt="/" />
+					<p>百度浏览器 </p>
+					<p><span>3元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/kuwo.jpg" alt="/" />
+					<p>酷我音乐 </p>
+					<p><span>3元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/360.jpg" alt="/" />
+					<p>360手机助手 </p>
+					<p><span>3元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/baidu.jpg" alt="/" />
+					<p>百度浏览器 </p>
+					<p><span>3元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/kuwo.jpg" alt="/" />
+					<p>酷我音乐 </p>
+					<p><span>3元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/360.jpg" alt="/" />
+					<p>360手机助手</p>
+					<p><span>3元</span>/个</p>
+				</div>
+
+			</div>
+
+			<div class="box gameBox">
+				<div class="img_box">
+					<img src="img/game1.jpg" alt="/" />
+					<p>天天炫舞 </p>
+					<p><span>30%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game2.jpg" alt="/" />
+					<p>大话西游 </p>
+					<p><span>30%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game3.jpg" alt="/" />
+					<p>问道</p>
+					<p><span>45%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game4.jpg" alt="/" />
+					<p>梦幻西游</p>
+					<p><span>30%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game5.jpg" alt="/" />
+					<p>天子</p>
+					<p><span>50%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game6.jpg" alt="/" />
+					<p>皇室战争</p>
+					<p><span>30%充值</span></p>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- 我们的优势-->
+		<section class="section4">
+			<h2>我们的优势</h2>
+			<div class="line"></div>
+			<div class="s4_box">
+				<div class="ad_box">
+					<img src="img/advantage_1.png" alt="/" />
+					<div class="text">
+						<h5>强大的技术力量</h5>
+						<p>乐盟拥有业内领先的技术团队，对平台系统拥有独特的技术优势。</p>
+					</div>
+				</div>
+				<div class="ad_box">
+					<img src="img/advantage_2.png" alt="/" />
+					<div class="text">
+						<h5>独创的多级代理制度</h5>
+						<p>独创的多级代理制度，最大化推广下线带来的奖励真正做到足不出户坐享其成！</p>
+					</div>
+				</div>
+				<div class="ad_box">
+					<img src="img/advantage_3.png" alt="/" />
+					<div class="text">
+						<h5>详细透明的数据统计</h5>
+						<p>数据统计系统公平、透明计算推广收入，会员可翔实监测；数据统计系统也为服务的优化、升级提供参考</p>
+					</div>
+				</div>
+				<div class="ad_box">
+					<img src="img/advantage_4.png" alt="/" />
+					<div class="text">
+						<h5>高额的收入回报</h5>
+						<p>乐盟拥有全网最高的分成比例、最高的产品单价和最灵活的结算周期，将会员的收入最大化。</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+
+		<!--乐盟收入排行榜-->
+		<section class="section5">
+			<h2>乐盟收入排行榜</h2>
+			<div class="line"></div>
+			<div class="s5_box">
+				<div class="text">
+					<span class="num num_a">1</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+				<div class="text">
+					<span class="num num_a">2</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+				<div class="text">
+					<span class="num num_a">3</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+				<div class="text">
+					<span class="num">4</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+				<div class="text">
+					<span class="num">5</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+				<div class="text">
+					<span class="num">6</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+			</div>
+		</section>
+
+		<!--合作伙伴-->
+		<section class="section6">
+			<h2>合作伙伴</h2>
+			<div class="s6_box">
+				<img src="img/sohu.png" />
+				<img src="img/tecent.png" />
+				<img src="img/migu.png" />
+				<img src="img/suning.png" />
+				<img src="img/jingdong.png" />
+				<img src="img/wangyi.png" />
+				<img src="img/taobao.png" />
+				<img src="img/bank.png" />
+				<img src="img/dangdang.png" />
+			</div>
+		</section>
+
+		<!--底部-->
+		<footer>
+			<div class="left">
+				<img src="img/footer_code.png" alt="二维码" />
+				<p>微信公众号</p>
+			</div>
+			<div class="right">
+				<p class="phone">400-9977-768</p>
+				<p class="text">全国统一服务热线</p>
+				<p class="qq">
+					QQ：800033559
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<p class="address">
+				地址：山东省烟台市芝罘区电子商务创新港706室
+			</p>
+			<div class="line"></div>
+			<div class="copy_box">
+				<p class="copy">Copyright © 2011-2020 乐盟网络 </p>
+				<p class="copy">All Rights Reserved. 浙ICP备14036245号</p>
+			</div>
+		</footer>
+
+	</body>
+	<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+	<!--导航-->
+	<script type="text/javascript">
+		var Nav = $('#Nav');
+		var icon_show = $('#Nav .show');
+		var icon_close = $('#Nav .close');
+		var icon_home = $('#Nav .home');
+		var total = $('#total');
+		var choose = $('.choose');
+		var money = $('#money .one');
+		var money_con = $('.money_content');
+		var news = $('#news .one');
+		var news_con = $('.news_content');
+		var help = $('#help .one');
+		var help_con = $('.help_content');
+		var help_two = $('#help .two');
+		var help_sub = $('#help .help_sub');
+		var login = $('#total .nav .login');
+		var login_con = $('#h_login');
+
+		help_two.attr('data-content', '>');
+		//右上角点击事件
+		Nav.click(function() {
+			//			debugger;
+			if(total.css('display') == 'block') {
+				total.hide();
+				icon_close.hide();
+				icon_home.hide();
+				icon_show.show();
+
+			} else {
+				total.show();
+				icon_show.hide();
+				icon_home.hide();
+				icon_close.show();
+			}
+		})
+
+		//点击导航改变active属性
+		choose.click(function() {
+			$(this).siblings().children('.one').removeClass('active');
+			$(this).children('.one').addClass('active')
+		})
+
+		//打开关闭如何赚钱
+		money.click(function() {
+			if(money_con.css('display') == 'block') {
+				money_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				money_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+
+			}
+		})
+
+		//打开关闭乐盟新闻
+		news.click(function() {
+			if(news_con.css('display') == 'block') {
+				news_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				news_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+
+			}
+		})
+
+		//帮助中心
+		help.click(function() {
+			if(help_con.css('display') == 'block') {
+				help_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				help_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+			}
+		})
+
+		//帮助中心子菜单
+		help_two.click(function() {
+			if($(this).siblings('.help_sub').css('display') == 'block') {
+				$(this).siblings('.help_sub').css('display', 'none');
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				$(this).siblings('.help_sub').css('display', 'block');
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+			}
+		})
+
+		//登录注册
+		login.click(function() {
+			icon_close.hide();
+			icon_show.hide();
+			icon_home.show();
+			login_con.show();
+			icon_home.click(function() {
+				icon_close.hide();
+				icon_home.hide();
+				icon_show.show();
+				login_con.hide();
+				total.show();
+			})
+		})
+	</script>
+
+	<!--tab页-->
+	<script type="text/javascript">
+		$(function() {
+			$('.s2_iconbox .box').click(function() {
+
+				$(this).siblings('.box').removeClass('active').end().addClass('active');
+
+			});
+
+			//			$('#sofeware').click(function(){
+			//				$(this).siblings().removeClass('active').end().addClass('active');
+			//			})
+
+			var app = $('#APP div');
+			var box = $('.section3 .box');
+			app.click(function() {
+				$(this).siblings().removeClass('active').end().addClass('active');
+				var m = $(this).index();
+				box.hide();
+				box.eq(m).show();
+
+			})
+
+		})
+	</script>
+
+</html>
