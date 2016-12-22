@@ -1,0 +1,74 @@
+@charset "utf-8";
+body {
+  background: #f6f6f6;
+}
+section h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+section p {
+  font-size: 0.6rem;
+}
+.section2 {
+  padding: 1rem 0.5rem;
+}
+.section2 > p {
+  font-size: 0.8rem;
+  color: #fff;
+  width: 6.5rem;
+  height: 1.5rem;
+  background: #318cf5;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.section2 .s2_box ul {
+  padding-left: 1rem;
+  margin-left: 0.5rem;
+  border-left: 0.025rem solid #d2d2d2;
+  min-height: 10rem;
+}
+.section2 .s2_box ul li {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.section2 .s2_box ul li i {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  left: -1.4rem;
+}
+.section2 .s2_box ul li i img {
+  max-width: 0.8rem;
+}
+.section2 .s2_box ul li h5 {
+  color: #1899f0;
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.section2 .s2_box ul li .answer {
+  font-size: 0.6rem;
+  font-family: CN_normal;
+}
+.section2 .s2_box ul li .answer p.need {
+  margin-bottom: 0.5rem;
+}
+.section2 .s2_box ul li .answer .light {
+  font-family: CN_light;
+  font-size: 0.55rem;
+}
+.section2 .s2_box ul li .answer a {
+  color: #ff0000;
+}
+.section2 .s2_box ul li .answer p.need_top {
+  margin-top: 0.5rem;
+}
+.section2 .s2_box ul li .answer ol {
+  padding-left: 0.5rem;
+}
+.section2 .s2_box ul li .answer ol li {
+  margin: 0;
+}
+.section2 .s2_box ul li .answer ol li.need {
+  margin-bottom: 0.5rem;
+}

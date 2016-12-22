@@ -1,0 +1,103 @@
+@charset "utf-8";
+body {
+  background: #f6f6f6;
+}
+section h2 {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+section p {
+  font-size: 0.6rem;
+  font-family: CN_light;
+  line-height: 1.2;
+}
+.line {
+  height: 0.075rem;
+  background: #43a4ff;
+}
+.section2 {
+  padding: 1.5rem 0.5rem 1.5rem;
+}
+.section2 h2 {
+  margin-bottom: 0.3rem;
+}
+.section2 .line {
+  width: 2.5rem;
+  margin-top: 0.25rem;
+}
+.section2 .fir {
+  margin: 0.625rem 0 1.5rem;
+}
+.section2 p.sec {
+  text-indent: 2em;
+  margin-bottom: 1rem;
+}
+.section3 {
+  background: #fff;
+  padding: 1.5rem 0.5rem 0.5rem;
+}
+.section3 h2 {
+  margin-bottom: 0.3rem;
+}
+.section3 .s3_box {
+  text-align: left;
+  margin-top: 1.25rem;
+}
+.section3 .s3_box .jx_box {
+  margin-bottom: 1rem;
+}
+.section3 .s3_box .jx_box .num {
+  float: left;
+  margin-right: 0.75rem;
+  padding-top: 0.25rem;
+}
+.section3 .s3_box .jx_box .num p {
+  width: 0.35rem;
+  height: 0.35rem;
+  background: #43a4ff;
+}
+.section3 .s3_box .jx_box .text {
+  float: left;
+  width: 14.7rem;
+}
+.section3 .s3_box .jx_box .text h5 {
+  font-size: 0.6rem;
+}
+.section3 .s3_box .jx_box .text p {
+  font-size: 0.6rem;
+}
+.section4 {
+  padding: 1.5rem 0.5rem;
+}
+.section4 h2 {
+  margin-bottom: 0.3rem;
+}
+.section4 .s4_box {
+  padding-top: 1rem;
+}
+.section4 .s4_box h3 {
+  font-size: 0.7rem;
+  color: #43a4ff;
+}
+.section4 .s4_box ol {
+  padding-left: 0.7rem;
+  font-family: CN_light;
+  font-size: 0.55rem;
+}
+.section5 {
+  background: #fff;
+  padding: 1.5rem 0.5rem;
+}
+.section5 h2 {
+  margin-bottom: 0.3rem;
+}
+.section5 .line {
+  width: 2.5rem;
+  margin-top: 0.25rem;
+}
+.section5 .fir {
+  margin: 0.625rem 0 1.5rem;
+}
+.section5 p:not(.fir) {
+  margin-bottom: 0.25rem;
+}
